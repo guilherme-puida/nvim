@@ -45,6 +45,8 @@ return require'packer'.startup(
     -- commenting lines with `gcc`
     use { 'numToStr/Comment.nvim', config = { function() require'Comment'.setup() end } }
 
+    use { 'lukas-reineke/indent-blankline.nvim', config = { function() require'config.indent-blankline' end } }
+
 
     ---- Lsp stuff ----
     use { 'neovim/nvim-lspconfig', config = { function() require 'config.nvim-lspconfig' end } }
