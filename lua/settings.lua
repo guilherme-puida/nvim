@@ -32,6 +32,10 @@ opt.shiftwidth = 4
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.smartindent = true
+opt.foldmethod = 'expr'
+cmd [[ set foldexpr=nvim_treesitter#foldexpr() ]]
+
+opt.scrolloff = 5
 
 --- Performance ---
 opt.lazyredraw = true
