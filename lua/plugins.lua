@@ -37,6 +37,8 @@ return require'packer'.startup(
     -- UI stuff
     use 'stevearc/dressing.nvim'
 
+    use { 'lewis6991/gitsigns.nvim', config = function() require'gitsigns'.setup() end }
+
     ---- Editing ----
     
     -- autopairing opening and closing stuff
