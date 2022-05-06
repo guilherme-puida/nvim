@@ -54,7 +54,7 @@ local on_attach = function(client, bufnr)
   -- buf_set_keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
-local servers = { 'pyright', 'tsserver', 'gopls', 'eslint' }
+local servers = { 'pyright', 'tsserver', 'gopls', 'eslint', 'bashls' }
 
 for _, server in ipairs(servers) do
   lspconfig[server].setup(coq.lsp_ensure_capabilities({
