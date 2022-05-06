@@ -19,6 +19,9 @@ return require'packer'.startup(
     use 'folke/which-key.nvim'
     use { 'mrjones2014/legendary.nvim', config = { function() require 'config.legendary' end } }
 
+    -- EditorConfig
+    use 'gpanders/editorconfig.nvim'
+
     -- file navigation with telescope
     use { 
       'nvim-telescope/telescope.nvim',
