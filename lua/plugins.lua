@@ -56,10 +56,5 @@ return require'packer'.startup(
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate', config = { function() require 'config.nvim-treesitter' end } }
 
     use { 'ms-jpq/coq_nvim', branch = 'coq', requires = { {'ms-jpq/coq.artifacts', branch = 'artifacts' } }, config = { function() require 'config.coq' end } }
-
-
-    ---- Terminal ----
-    use { 'numToStr/FTerm.nvim', config = { function() require 'config.fterm' end } }
-
   end
 )
