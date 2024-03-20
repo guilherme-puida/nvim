@@ -17,8 +17,14 @@ return {
 
           set('<leader>cr', vim.lsp.buf.rename, 'rename')
           set('<leader>ca', vim.lsp.buf.code_action, 'code action')
-          set('K', vim.lsp.buf.hover, 'show hover documentation')
+          set('<leader>cs', require('telescope.builtin').lsp_document_symbols, 'document symbols')
+          set('<leader>cw', require('telescope.builtin').lsp_dynamic_workspace_symbols, 'workspace symbols')
+
+          set('gd', require('telescope.builtin').lsp_definitions, 'goto definition')
           set('gD', vim.lsp.buf.declaration, 'goto declaration')
+          set('gr', require('telescope.builtin').lsp_references, 'goto references')
+          set('gI', require('telescope.builtin').lsp_implementations, 'goto implementation')
+          set('K', vim.lsp.buf.hover, 'show hover documentation')
 
           local client = vim.lsp.get_client_by_id(event.data.client_id)
           if client and client.server_capabilities.documentHighlightProvider then
