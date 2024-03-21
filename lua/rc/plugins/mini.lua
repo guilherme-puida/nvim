@@ -8,6 +8,10 @@ return {
     config = true,
   },
   {
+    'echasnovski/mini.comment',
+    config = true,
+  },
+  {
     'echasnovski/mini.statusline',
     opts = {
       set_vim_settings = false,
