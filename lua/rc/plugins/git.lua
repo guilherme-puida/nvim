@@ -12,7 +12,7 @@ return {
     config = true,
     keys = {
       { '<leader>gg', '<cmd>Neogit kind=split<cr>', 'git panel (split)' },
-      { '<leader>gG', '<cmd>Neogit kind=split<cr>', 'git panel' },
+      { '<leader>gG', '<cmd>Neogit<cr>', 'git panel' },
     }
   },
 }
