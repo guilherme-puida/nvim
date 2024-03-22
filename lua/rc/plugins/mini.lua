@@ -31,4 +31,8 @@ return {
       { '<leader>ee', '<cmd>lua MiniFiles.open()<cr>', desc = 'open directory' },
     },
   },
+  {
+    'echasnovski/mini.completion',
+    config = true,
+  },
 }
