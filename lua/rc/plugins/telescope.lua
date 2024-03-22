@@ -37,8 +37,7 @@ return {
         builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
           winblend = 10,
           previewer = false,
-        }, { desc = 'search in buffer' })
-      end)
+        }) end, { desc = 'search in buffer' })
 
       set('n', '<leader>fo', function()
         builtin.live_grep {
