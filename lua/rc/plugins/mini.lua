@@ -38,5 +38,9 @@ return {
   {
     'echasnovski/mini.surround',
     config = true,
+  },
+  {
+    'echasnovski/mini.jump2d',
+    config = true,
   }
 }
