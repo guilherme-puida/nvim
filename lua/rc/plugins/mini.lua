@@ -35,4 +35,8 @@ return {
     'echasnovski/mini.completion',
     config = true,
   },
+  {
+    'echasnovski/mini.surround',
+    config = true,
+  }
 }
