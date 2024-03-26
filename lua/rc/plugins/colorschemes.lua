@@ -2,6 +2,7 @@ return {
   {
     'catppuccin/nvim',
     name = 'catppuccin',
+    enabled = false,
     priority = 1000,
     opts = {
       dim_inactive = {
@@ -24,5 +25,20 @@ return {
       require 'catppuccin'.setup(opts)
       vim.cmd.colorscheme 'catppuccin'
     end
-  }
+  },
+  {
+    'rebelot/kanagawa.nvim',
+    priority = 1000,
+    opts = {
+      dimInactive = true,
+      background = {
+        dark = 'dragon',
+        light = 'lotus',
+      },
+    },
+    config = function(_, opts)
+      require 'kanagawa'.setup(opts)
+      vim.cmd.colorscheme 'kanagawa'
+    end
+  },
 }
