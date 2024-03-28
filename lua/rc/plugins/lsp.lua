@@ -45,6 +45,7 @@ return {
 
       local servers = {
         lua_ls = { settings = { Lua = { completion = { callSnippet = 'Replace' } } } },
+        emmet_language_server = {},
       }
 
       local tools = {
