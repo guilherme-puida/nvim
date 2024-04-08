@@ -47,6 +47,8 @@ return {
         lua_ls = { settings = { Lua = { completion = { callSnippet = 'Replace' } } } },
         emmet_language_server = {},
         gopls = {},
+        tsserver = {},
+        rust_analyzer = {},
       }
 
       local tools = {
