@@ -1,0 +1,36 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_node_provider = 0
+
+vim.opt.breakindent = true
+vim.opt.completeopt = "menuone,noselect,noinsert"
+vim.opt.cursorline = true
+vim.opt.expandtab = true
+vim.opt.ignorecase = true
+vim.opt.inccommand = "split"
+vim.opt.linebreak = true
+vim.opt.number = true
+vim.opt.pumblend = 10
+vim.opt.pumheight = 10
+vim.opt.pumheight = 15
+vim.opt.ruler = false
+vim.opt.scrolloff = 10
+vim.opt.shiftround = true
+vim.opt.shiftwidth = 0
+vim.opt.showmode = false
+vim.opt.showmode = false
+vim.opt.signcolumn = "yes"
+vim.opt.smartcase = true
+vim.opt.splitbelow = true
+vim.opt.splitkeep = "screen"
+vim.opt.splitright = true
+vim.opt.tabstop = 4
+vim.opt.undofile = true
+vim.opt.virtualedit = "block"
+vim.opt.winblend = 10
+vim.opt.wrap = false
+vim.opt.exrc = true
